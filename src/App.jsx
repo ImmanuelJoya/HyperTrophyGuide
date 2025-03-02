@@ -12,11 +12,14 @@ function App() {
 
   const handleWorkoutTypeSelection = (type) => {
     setSelectedWorkoutType(type);
+    setExerciseList([]); // Clear exercise list on new selection
   };
 
+  // Safer random exercise picker
   const getRandomExercises = (arr, count) => {
-    const shuffled = arr.sort(() => 0.5 - Math.random());
-    return shuffled.slice(0, count);
+    if (!arr || arr.length === 0) return [];
+    const shuffled = [...arr].sort(() => 0.5 - Math.random()); // Copy array before sorting
+    return shuffled.slice(0, Math.min(count, arr.length));
   };
 
   const renderPopupButtons = () => {

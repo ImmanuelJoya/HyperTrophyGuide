@@ -1,97 +1,124 @@
-/* Reset and base styles */
+/* Base styles */
 body {
     font-family: 'Courier New', monospace;
     margin: 0;
     padding: 0;
     background-color: #0d0d0d;
     color: #e0e0e0;
-    min-height: 100vh; /* Ensure body takes full viewport height */
-    display: flex; /* Use flexbox for centering */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #0d0d0d, #1a1a1a); /* Subtle gradient */
 }
 
-/* Main container for app content */
+/* Main container */
 .app-container {
-    text-align: center; /* Center text and inline elements */
+    text-align: center;
+    padding: 2rem; /* More breathing room */
 }
 
 /* Headings */
 h2 {
-    font-size: 2rem;
+    font-size: 2.5rem; /* Slightly larger */
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     color: #00ffcc;
     text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     color: #ff00ff;
     text-shadow: 0 0 5px #ff00ff;
+    margin-bottom: 1.5rem;
 }
 
 /* Buttons */
 button {
     background-color: #1a1a1a;
     color: #00ffcc;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1.5rem; /* Larger buttons */
     border: 1px solid #00ffcc;
     border-radius: 0.25rem;
     cursor: pointer;
     transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 button:hover {
     background-color: #00ffcc;
     color: #0d0d0d;
-    box-shadow: 0 0 10px #00ffcc;
+    box-shadow: 0 0 15px #00ffcc;
 }
 
-/* Popup container */
+/* Button animation (pulse effect) */
+button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(0, 255, 204, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { width: 0; height: 0; opacity: 1; }
+    100% { width: 200%; height: 200%; opacity: 0; }
+}
+
+/* Popup */
 .popup {
     background-color: #1a1a1a;
-    padding: 1rem;
+    padding: 1.5rem;
     border-radius: 0.5rem;
     border: 1px solid #ff00ff;
     box-shadow: 0 0 15px rgba(255, 0, 255, 0.3);
-    margin-top: 1rem; /* Space above popup */
+    margin-top: 2rem;
 }
 
 /* Exercise list */
 ul {
     list-style-type: square;
     padding-left: 1.5rem;
-    margin-top: 1rem; /* Space above list */
+    margin-top: 2rem;
 }
 
 li {
     color: #e0e0e0;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+    transition: all 0.3s ease;
 }
 
-/* Specific button styles */
+li:hover {
+    color: #00ffcc;
+    text-shadow: 0 0 5px #00ffcc;
+}
+
+/* Close button */
 button.close-btn {
     background-color: #1a1a1a;
     color: #ff3366;
     border: 1px solid #ff3366;
-    margin-top: 0.5rem; /* Space above close button */
+    margin-top: 1rem;
 }
 
 button.close-btn:hover {
     background-color: #ff3366;
     color: #0d0d0d;
-    box-shadow: 0 0 10px #ff3366;
+    box-shadow: 0 0 15px #ff3366;
 }
 
-/* Container for buttons with spacing */
+/* Button group */
 .button-group {
-    margin-bottom: 1rem;
-    display: flex; /* Flexbox for horizontal alignment */
-    justify-content: center; /* Center buttons horizontally */
-    flex-wrap: wrap; /* Allow wrapping if needed */
-}
-
-.button-group button {
-    margin: 0.25rem; /* Uniform spacing around buttons */
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem; /* Better spacing with gap */
 }

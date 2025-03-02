@@ -1,0 +1,24 @@
+{
+    "legExercises": [
+        {
+            "name": "Squats",
+            "muscle": "legs",
+            "equipment": "barbell"
+        },
+        {
+            "name": "Leg Press",
+            "muscle": "legs",
+            "equipment": "leg press machine"
+        },
+        {
+            "name": "Leg Curl",
+            "muscle": "legs",
+            "equipment": "dumbbell"
+        },
+        {
+            "name": "Leg Extension",
+            "muscle": "legs",
+            "equipment": "dumbbell"
+        }
+    ]
+}

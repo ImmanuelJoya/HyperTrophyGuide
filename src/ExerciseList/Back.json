@@ -1,0 +1,19 @@
+{
+    "backExercises": [
+        {
+            "name": "Deadlift",
+            "muscle": "back",
+            "equipment": "barbell"
+        },
+        {
+            "name": "Lat Pulldown",
+            "muscle": "back",
+            "equipment": "barbell"
+        },
+        {
+            "name": "Seated Cable Row",
+            "muscle": "back",
+            "equipment": "cable"
+        }
+    ]
+}

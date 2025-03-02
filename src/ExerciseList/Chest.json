@@ -1,0 +1,30 @@
+{
+    "chestExercises": [
+        {
+            "name": "Bench Press",
+            "muscle": "chest",
+            "equipment": "barbell or dumbbell"
+        },
+        {
+            "name": "Incline Bench Press",
+            "muscle": "chest",
+            "equipment": "barbell or dumbbell"
+        },
+        {
+            "name": "Dips (assisted or weighted)",
+            "muscle": "chest",
+            "equipment": "Dip station"
+        },
+        {
+            "name": "Dumbbell Fly",
+            "muscle": "chest",
+            "equipment": "dumbbell"
+        },
+        {
+            "name": "Cable Fly",
+            "muscle": "chest",
+            "equipment": "cable"
+        }
+    ]
+    
+}

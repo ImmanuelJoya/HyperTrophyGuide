@@ -1,0 +1,44 @@
+{
+    "armExercises": [
+        {
+            "name": "Bicep Curl",
+            "muscle": "arms",
+            "equipment": "dumbbell"
+        },
+        {
+            "name": "Tricep Extension",
+            "muscle": "arms",
+            "equipment": "dumbbell"
+        },
+        {
+            "name": "Tricep Kickback",
+            "muscle": "arms",
+            "equipment": "dumbbell"
+        },
+        {
+            "name": "Hammer Curl",
+            "muscle": "arms",
+            "equipment": "dumbbell"
+        },
+        {
+            "name": "Overhead Press",
+            "muscle": "arms",
+            "equipment": "dumbbell"
+        },
+        {
+            "name": "Biceps Curl",
+            "muscle": "arms",
+            "equipment": "dumbbell"
+        },
+        {
+            "name": "Curl Machine",
+            "muscle": "arms",
+            "equipment": "cable"
+        },
+        {
+            "name": "Preacher Curl",
+            "muscle": "arms",
+            "equipment": "cable"
+        }
+    ]
+}

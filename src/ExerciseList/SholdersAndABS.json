@@ -1,0 +1,47 @@
+{
+    "shoulderExercises": [
+        {
+            "name": "Lateral Raise",
+            "muscle": "shoulders",
+            "equipment": "dumbbell"
+        },
+        {
+            "name": "Front Raise",
+            "muscle": "shoulders",
+            "equipment": "dumbbell"
+        },
+        {
+            "name": "Rear Delt Raise",
+            "muscle": "shoulders",
+            "equipment": "dumbbell"
+        },
+        {
+            "name": "Upright Row",
+            "muscle": "shoulders",
+            "equipment": "barbell"
+        },
+        {
+            "name": "Seated Cable Row",
+            "muscle": "shoulders",
+            "equipment": "cable"
+        }
+    ],
+
+    "AbsExercises": [
+        {
+            "name": "CableCrunches",
+            "muscle": "abs",
+            "equipment": "Cable Station"
+        },
+        {
+            "name": "Hanging Knee Raise",
+            "muscle": "abs",
+            "equipment": "Pull-up bar"
+        },
+        {
+            "name": "Side Plank",
+            "muscle": "abs",
+            "equipment": "body weight"
+        }
+    ]
+}

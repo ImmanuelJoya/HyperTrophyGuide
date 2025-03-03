@@ -9,18 +9,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(45deg, #0d0d0d, #1a1a1a); /* Subtle gradient */
+    background: linear-gradient(45deg, #0d0d0d, #1a1a1a);
 }
 
 /* Main container */
 .app-container {
     text-align: center;
-    padding: 2rem; /* More breathing room */
+    padding: 2rem;
+    position: relative;
 }
 
 /* Headings */
 h2 {
-    font-size: 2.5rem; /* Slightly larger */
+    font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 2rem;
     color: #00ffcc;
@@ -38,7 +39,7 @@ h3 {
 button {
     background-color: #1a1a1a;
     color: #00ffcc;
-    padding: 0.75rem 1.5rem; /* Larger buttons */
+    padding: 0.75rem 1.5rem;
     border: 1px solid #00ffcc;
     border-radius: 0.25rem;
     cursor: pointer;
@@ -72,7 +73,7 @@ button::after {
     100% { width: 200%; height: 200%; opacity: 0; }
 }
 
-/* Popup */
+/* Popup (Workout Options) */
 .popup {
     background-color: #1a1a1a;
     padding: 1.5rem;
@@ -80,6 +81,53 @@ button::after {
     border: 1px solid #ff00ff;
     box-shadow: 0 0 15px rgba(255, 0, 255, 0.3);
     margin-top: 2rem;
+}
+
+/* Authentication Popup */
+.auth-popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border: 1px solid #00ffcc;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.3);
+    z-index: 1000;
+}
+
+.auth-popup form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 250px;
+}
+
+.auth-popup input {
+    background-color: #0d0d0d;
+    color: #e0e0e0;
+    padding: 0.75rem;
+    border: 1px solid #00ffcc;
+    border-radius: 0.25rem;
+    outline: none;
+}
+
+.auth-popup input:focus {
+    box-shadow: 0 0 5px #00ffcc;
+}
+
+/* Guest button */
+button.guest-btn {
+    color: #ffcc00; /* Neon yellow for guest mode */
+    border: 1px solid #ffcc00;
+    margin-top: 0.5rem;
+}
+
+button.guest-btn:hover {
+    background-color: #ffcc00;
+    color: #0d0d0d;
+    box-shadow: 0 0 15px #ffcc00;
 }
 
 /* Exercise list */
@@ -120,5 +168,5 @@ button.close-btn:hover {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 1rem; /* Better spacing with gap */
+    gap: 1rem;
 }

@@ -23,9 +23,26 @@ HyperTrophyGuide is a web-based workout planner built with a React + Vite fronte
    ```bash
    cd backend
 
-###Install Dependencies:
+### Install Dependencies:
 ```bash
-**npm install**
-###Start the Development Server:
+npm install
+
+### Start the Development Server:
 ```bash
-**npm run dev**
+npm run dev
+
+### User authentication is still work in progress
+Work in progress. Currently supports basic login/register with JWT and guest mode, but lacks full integration with workout features.
+
+### Comming soon:
+- **Workout tracking**: Users can log their workouts and track progress.
+- **Exercise database**: A more comprehensive database of exercises with detailed information.
+- **New Workout Types**: Add support for Calisthenics, Gymnastics, and CrossFit routines.
+
+### Technologies Used:
+- **Frontend**: React, Vite, Axios, Custom CSS
+- **Backend**: FastAPI, Uvicorn, PyJWT
+- **Data**: Static JSON files.
+
+## Thank you for visiting,stay tuned for future updates
+

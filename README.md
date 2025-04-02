@@ -32,6 +32,7 @@ HyperTrophyGuide is a web-based workout planner built with a React + Vite fronte
 ### Start the Development Server:
    ```bash
    npm run dev
+   
    ```
 
 ### User authentication is still work in progress
@@ -47,5 +48,10 @@ Work in progress. Currently supports basic login/register with JWT and guest mod
 - **Backend**: FastAPI, Uvicorn, PyJWT
 - **Data**: Static JSON files.
 
+### Check it out Here
+- **Link**: [Visit](https://hyper-trophy-guide.vercel.app/)
+
 ## Thank you for visiting,stay tuned for future updates
+
+
 

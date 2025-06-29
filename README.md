@@ -1,4 +1,4 @@
-# HyperTrophyGuide
+# HyperTrophyGuide  
 
 HyperTrophyGuide is a web-based workout planner built with a React + Vite frontend and a FastAPI backend. It allows users to generate random exercise routines based on popular workout splits (PushPullLegs, BroSplit, UpperBody-LowerBody). The app features user authentication (login/register) with JWT, a guest mode for quick access, and a cyberpunk-inspired dark theme.
 

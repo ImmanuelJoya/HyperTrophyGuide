@@ -31,7 +31,7 @@ const chestData = {
     { name: "Incline Press" },
     { name: "Dips" }
   ]
-};
+}; 
 
 const lowerBodyData = {
   legExercises: [

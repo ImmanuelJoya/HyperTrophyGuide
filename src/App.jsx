@@ -10,7 +10,7 @@ const armsData = {
     { name: "Tricep Dips" },
     { name: "Overhead Press" },
     { name: "Cable Curls" }
-  ]
+  ] 
 };
 
 const backData = {
